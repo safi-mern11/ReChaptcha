@@ -6,28 +6,28 @@ const DisabledPlan = () => {
       desce: "Verify your Verbyo profile, so we will know that you are real.",
       dollars: "$ 2.99",
       durations: "billed monthly",
-      src: "/img/verified.svg",
+      src: "/img/verified.png",
     },
     {
       title: "PREMIUM USER",
       desce: "More offers, better paid  offers, more benefits and  much more.",
       dollars: "$ 24.99",
       durations: "billed monthly",
-      src: "/img/arrow.svg",
+      src: "/img/arrow.png",
     },
     {
       title: "YEARLY PLAN",
       desce: "Get all premium benefits for the whole year.",
       dollars: "$ 59.99",
       durations: "billed yearly",
-      src: "/img/arrow.svg",
+      src: "/img/arrow.png",
     },
     {
       title: "LIFETIME PREMIUM",
       desce: "Verify your Verbyo profile, so we will know that you are real.",
       dollars: "$ 99.99",
       durations: "billed once in a lifetime",
-      src: "/img/arrow.svg",
+      src: "/img/arrow.png",
     },
   ];
   return (
