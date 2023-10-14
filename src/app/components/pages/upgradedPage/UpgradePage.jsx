@@ -79,7 +79,7 @@ const UpgradePage = () => {
   const handleCaptchaChange = (value) => {
     setreCaptchaCheck(value);
   };
-  const regex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u;
   const handleButtonClick = async () => {
     if (reCaptchaCheck && inputVal.match(regex)) {
       const data = { email: inputVal };
