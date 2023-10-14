@@ -6,24 +6,28 @@ const DisabledPlan = () => {
       desce: "Verify your Verbyo profile, so we will know that you are real.",
       dollars: "$ 2.99",
       durations: "billed monthly",
+      src: "/img/verified.svg",
     },
     {
       title: "PREMIUM USER",
       desce: "More offers, better paid  offers, more benefits and  much more.",
       dollars: "$ 24.99",
       durations: "billed monthly",
+      src: "/img/arrow.svg",
     },
     {
       title: "YEARLY PLAN",
       desce: "Get all premium benefits for the whole year.",
       dollars: "$ 59.99",
       durations: "billed yearly",
+      src: "/img/arrow.svg",
     },
     {
       title: "LIFETIME PREMIUM",
       desce: "Verify your Verbyo profile, so we will know that you are real.",
       dollars: "$ 99.99",
       durations: "billed once in a lifetime",
+      src: "/img/arrow.svg",
     },
   ];
   return (
@@ -42,18 +46,7 @@ const DisabledPlan = () => {
                   item.title == "LIFETIME PREMIUM" && " mt-[24px] sm:mt-[0px]"
                 }`}
               >
-                {item.title == "GET VERIFIED" && (
-                  <img src="/img/enabled-verified.svg" alt="" />
-                )}
-                {item.title == "PREMIUM USER" && (
-                  <img src="/img/arrow.svg" alt="" />
-                )}
-                {item.title == "YEARLY PLAN" && (
-                  <img src="/img/arrow.svg" alt="" />
-                )}
-                {item.title == "LIFETIME PREMIUM" && (
-                  <img src="/img/arrow.svg" alt="" />
-                )}
+                <img src={item.src} alt="" />
                 <div>
                   <h1 className="Montserrat700 text-[16px] leading-normal font-[700] text-[#D3D4D9] pb-[7px]">
                     {item.title}
