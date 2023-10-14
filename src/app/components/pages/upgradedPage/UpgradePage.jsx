@@ -79,8 +79,9 @@ const UpgradePage = () => {
   const handleCaptchaChange = (value) => {
     setreCaptchaCheck(value);
   };
+  const regex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
   const handleButtonClick = async () => {
-    if (reCaptchaCheck && inputVal !== "") {
+    if (reCaptchaCheck && inputVal.match(regex)) {
       const data = { email: inputVal };
       // Make a POST request to the API
       await fetch("https://verbyo.com/api/upgrade-app/check-account", {
