@@ -43,7 +43,7 @@ const VerificationDetails = () => {
             className="sm:max-w-[400px] max-w-[332px] w-full mx-auto sm:mt-[42px] mt-[27px] sm:pt-[15px] pt-[24px] sm:pb-[50px] pb-[31px] sm:pl-[36px] pl-[21px] sm:pr-[27px] pr-[25px] border-[1px] border-solid border-[#EEE] sm:mb-[62px] mb-[51px]"
           >
             <div id="verification" className="mx-auto w-fit">
-              <img src="/img/EnabledVerified.svg" alt="" />
+              <img src="/img/enabled-verified.svg" alt="" />
             </div>
             <h1 className="Montserrat700 text-[14px] text-center text-[#262F61] font-[700] leading-normal sm:mt-[14px] mt-[13px]">
               GET VERIFIED

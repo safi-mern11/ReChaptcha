@@ -80,16 +80,16 @@ const EnabledPlan = () => {
                 }`}
               >
                 {item.title == "GET VERIFIED" && (
-                  <img src="/img/EnabledVerified.svg" alt="" />
+                  <img src="/img/enabled-verified.svg" alt="" />
                 )}
                 {item.title == "PREMIUM USER" && (
-                  <img src="/img/EnabledArrow.svg" alt="" />
+                  <img src="/img/enabled-arrow.svg" alt="" />
                 )}
                 {item.title == "YEARLY PLAN" && (
-                  <img src="/img/EnabledArrow2.svg" alt="" />
+                  <img src="/img/enabled-arrow2.svg" alt="" />
                 )}
                 {item.title == "LIFETIME PREMIUM" && (
-                  <img src="/img/EnabledArrow3.svg" alt="" />
+                  <img src="/img/enabled-arrow3.svg" alt="" />
                 )}
                 <div>
                   <h1 className="Montserrat700 text-[16px] leading-normal font-[700] text-[#262F61] pb-[7px]">

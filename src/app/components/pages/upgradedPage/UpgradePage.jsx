@@ -80,7 +80,7 @@ const UpgradePage = () => {
     setreCaptchaCheck(value);
   };
   const handleButtonClick = async () => {
-    if (reCaptchaCheck) {
+    if (reCaptchaCheck && inputVal !== "") {
       const data = { email: inputVal };
       // Make a POST request to the API
       await fetch("https://verbyo.com/api/upgrade-app/check-account", {
@@ -106,8 +106,10 @@ const UpgradePage = () => {
       if (userData !== "No User" && userData !== null) {
         setstage(2);
       }
-    } else {
+    } else if (!reCaptchaCheck) {
       toast.error("Please Complete Captcha");
+    } else {
+      toast.error("Please check your email");
     }
   };
 
@@ -186,7 +188,7 @@ const UpgradePage = () => {
                     className={`absolute w-[27px] h-[27px] rounded-full bg-[#057C1F]  right-[13px] top-[11px]`}
                   >
                     <img
-                      src="/img/verifiedCheck.svg"
+                      src="/img/verified-check.svg"
                       alt=""
                       className=" mx-auto mt-[8px]"
                     />
@@ -228,7 +230,7 @@ const UpgradePage = () => {
                     ? "Look for account"
                     : userData !== null && userData !== "No User"
                     ? "Continue"
-                    : userData == "No User" && "Searh Again"
+                    : userData == "No User" && "Search Again"
                 }
                 onClick={handleButtonClick}
               />

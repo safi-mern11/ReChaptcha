@@ -21,7 +21,7 @@ const PremiumDetails = () => {
 
   const permiumDetails = [
     {
-      src: "/img/EnabledVerified.svg",
+      src: "/img/enabled-verified.svg",
       title: "GET VERIFIED",
       desce:
         "Verify your account to make sure that you are a real person. Real people means better paid offers from advertisers.",
@@ -29,35 +29,35 @@ const PremiumDetails = () => {
       className2: "pt-[20px]",
     },
     {
-      src: "/img/FiveTimes.svg",
+      src: "/img/five-times.svg",
       title: "POST 5 TIMES DAILY",
       desce: "Increase your daily limit posts. Post more, earn more.",
       className: "mt-[20px] sm:max-w-[163px] max-w-[215px] w-full",
       className2: "pt-[49px]",
     },
     {
-      src: "/img/PaidOffers.svg",
+      src: "/img/paid-offers.svg",
       title: "BETTER PAID OFFERS",
       desce: "Earn more revenue with better paid offers for you to post. ",
       className: "mt-[20px] sm:max-w-[164px] max-w-[226px] w-full",
       className2: "pt-[48px]",
     },
     {
-      src: "/img/Exclusive.svg",
+      src: "/img/exclusive.svg",
       title: "EXCLUSIVE RAFFLES",
       desce: "Get access to exclusive raffles with amazing prizes. ",
       className: "mt-[29px] sm:max-w-[188px] max-w-[220px] w-full",
       className2: "pt-[38px]",
     },
     {
-      src: "/img/Ambassadar.svg",
+      src: "/img/ambassadar.svg",
       title: "BE A BRAND AMBASSADOR",
       desce: "Get selected to represent one of the brands in your country.",
       className: "mt-[15px] sm:max-w-[176px] max-w-[229px] w-full",
       className2: "pt-[46px]",
     },
     {
-      src: "/img/Support.svg",
+      src: "/img/support.svg",
       title: "PRIORITY SUPPORT",
       desce:
         "Be the first in line when you experience problems with your account.",
@@ -65,7 +65,7 @@ const PremiumDetails = () => {
       className2: "pt-[43px]",
     },
     {
-      src: "/img/Gift.svg",
+      src: "/img/gift.svg",
       title: "5,000 SOCIAL POINTS GIFT",
       desce: "Join more raffles and increase your chances to win.",
       className: "mt-[10px]  sm:max-w-[188px] max-w-[224px] w-full",
