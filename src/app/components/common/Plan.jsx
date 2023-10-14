@@ -43,9 +43,15 @@ const DisabledPlan = () => {
                 }`}
               >
                 {item.title == "GET VERIFIED" && (
-                  <img src="/img/verified.svg" alt="" />
+                  <img src="/img/enabled-verified.svg" alt="" />
                 )}
-                {item.title !== "GET VERIFIED" && (
+                {item.title == "PREMIUM USER" && (
+                  <img src="/img/arrow.svg" alt="" />
+                )}
+                {item.title == "YEARLY PLAN" && (
+                  <img src="/img/arrow.svg" alt="" />
+                )}
+                {item.title == "LIFETIME PREMIUM" && (
                   <img src="/img/arrow.svg" alt="" />
                 )}
                 <div>
