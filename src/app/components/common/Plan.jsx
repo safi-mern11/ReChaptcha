@@ -6,7 +6,7 @@ const DisabledPlan = () => {
       desce: "Verify your Verbyo profile, so we will know that you are real.",
       dollars: "$ 2.99",
       durations: "billed monthly",
-      src: "/img/verified.png",
+      src: "/img/verified.svg",
     },
     {
       title: "PREMIUM USER",
