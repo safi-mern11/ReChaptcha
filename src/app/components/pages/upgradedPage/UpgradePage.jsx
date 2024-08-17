@@ -206,7 +206,7 @@ const UpgradePage = () => {
               {userData == null && (
                 <div className=" w-fit pb-[17px] sm:pt-[15px] pt-[29px] mx-auto">
                   <ReCAPTCHA
-                    sitekey="6LcPRJ8oAAAAAKE1Z9g6C7wTx4CjfEHTOqvdpHPR"
+                    sitekey="6Lcc1SgqAAAAAIJ7CTFD9nD0xfGJdROpwBNSnH0w"
                     onChange={handleCaptchaChange}
                   />
                 </div>
