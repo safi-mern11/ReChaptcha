@@ -51,7 +51,6 @@ const UpgradePage = () => {
   ]);
 
   const [inputVal, setinputVal] = useState("");
-  const [reCaptchaCheck, setreCaptchaCheck] = useState(null);
   const {
     stage,
     setstage,
@@ -76,12 +75,10 @@ const UpgradePage = () => {
   useEffect(() => {
     data();
   }, []);
-  const handleCaptchaChange = (value) => {
-    setreCaptchaCheck(value);
-  };
+
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u;
   const handleButtonClick = async () => {
-    if (reCaptchaCheck && inputVal.match(regex)) {
+    if ( inputVal.match(regex)) {
       const data = { email: inputVal };
       // Make a POST request to the API
       await fetch("https://verbyo.com/api/upgrade-app/check-account", {
@@ -107,9 +104,7 @@ const UpgradePage = () => {
       if (userData !== "No User" && userData !== null) {
         setstage(2);
       }
-    } else if (!reCaptchaCheck) {
-      toast.error("Please Complete Captcha");
-    } else {
+    }  else {
       toast.error("Please check your email");
     }
   };
@@ -203,14 +198,7 @@ const UpgradePage = () => {
                   />
                 )}
               </div>
-              {userData == null && (
-                <div className=" w-fit pb-[17px] sm:pt-[15px] pt-[29px] mx-auto">
-                  <ReCAPTCHA
-                    sitekey="6Lcc1SgqAAAAAIJ7CTFD9nD0xfGJdROpwBNSnH0w"
-                    onChange={handleCaptchaChange}
-                  />
-                </div>
-              )}
+              
               <>
                 {userData == "No User" && (
                   <p className="Montserrat500 text-[14px] leading-normal font-[500] text-[#9E0B0B] sm:max-w-[511px] max-w-[315px] w-full mx-auto mt-[15px] mb-[31px] ">
