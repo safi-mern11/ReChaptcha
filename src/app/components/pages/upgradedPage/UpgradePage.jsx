@@ -212,6 +212,7 @@ const UpgradePage = () => {
                   </p>
                 )}
               </>
+              <div className='mt-[20px]'>
               <CustomButton
                 background="bg-[#3490EC]"
                 text={
@@ -223,6 +224,7 @@ const UpgradePage = () => {
                 }
                 onClick={handleButtonClick}
               />
+              </div>
               {stage == 1 || userData == "No User" ? (
                 <DisabledPlan />
               ) : stage == 2 || stage == 3 ? (
