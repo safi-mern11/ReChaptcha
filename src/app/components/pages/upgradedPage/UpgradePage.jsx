@@ -79,31 +79,9 @@ const UpgradePage = () => {
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u;
   const handleButtonClick = async () => {
     if ( inputVal.match(regex)) {
-      const data = { email: inputVal };
-      // Make a POST request to the API
-      await fetch("https://verbyo.com/api/upgrade-app/check-account", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": "e0d7a5baa8dd0739fee60e3c1bdfa696",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((result) => {
-          if (result.user) {
-            setuserData(result.user);
-          } else {
-            setuserData("No User");
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
 
-      if (userData !== "No User" && userData !== null) {
         setstage(2);
-      }
+      
     }  else {
       toast.error("Please check your email");
     }
